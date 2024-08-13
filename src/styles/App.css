@@ -1,0 +1,119 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Oxanium";
+  src: url("./fonts/Oxanium/Oxanium-VariableFont_wght.woff2") format("woff2"), url("./fonts/Oxanium/Oxanium-VariableFont_wght.ttf") format("ttf");
+}
+@font-face {
+  font-family: "WorkSans";
+  src: url("./fonts/Work_Sans/WorkSans-VariableFont_wght.woff2") format("woff2"), url("./fonts/Work_Sans/WorkSans-VariableFont_wght.ttf") format("ttf");
+}
+.container {
+  max-width: 1440px;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin: 0 auto;
+}
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  font-family: "Oxanium";
+  background-color: #1C121F;
+  color: rgb(245, 251, 242);
+}
+
+.header {
+  background-color: rgb(0, 81, 255);
+}
+@media screen and (min-width: 1280px) and (max-width: 1599.98px) {
+  .header {
+    background-color: rgb(145, 255, 0);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .header {
+    background-color: orange;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .header {
+    background-color: red;
+  }
+}/*# sourceMappingURL=App.css.map */
