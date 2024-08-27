@@ -10,6 +10,7 @@
 @import "./../components/SectionTitle";
 @import "./../components/Auctions";
 @import "./../components/NftCard";
+@import "./../components/HowItWorks";
 
 
 *{
@@ -98,7 +99,7 @@ select {
 
 body {
   font-family: "Oxanium";
-  background-color: $body;
-  color: $text-color;
+  background-color: $body !important;
+  color: $text-color !important;
 }
 

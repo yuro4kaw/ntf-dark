@@ -7,6 +7,7 @@
  background-color: transparent;
  cursor: pointer;
  transition: all $default-transition;
+ width: fit-content;
 
  &:hover{
     background-color: #271b2b;
@@ -22,9 +23,18 @@
      }
 }
 
+.white{
+    background-color: transparent;
+    color: inherit;
+
+    &:hover{
+        background-color: #271b2b;
+     }
+}
+
 
 .large{
-    width: 257px;
+    width: 260px;
     padding: 24px 76px;
     font-size: 28px;
 }

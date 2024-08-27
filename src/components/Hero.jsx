@@ -14,7 +14,7 @@ const Hero = () => {
         </h1>
         <div className="hero-buttons">
           <Button text="Explore" yellow large />
-          <Button text="Create" large />
+          <Button text="Create" white large />
         </div>
         <div className="hero-counters">
           <Counter value="32k+" description="Artworks" />

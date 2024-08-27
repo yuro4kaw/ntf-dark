@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 84px;
   
     &-text {
       position: relative;
@@ -16,11 +17,15 @@
       border-radius: 50%;
       display: block;
       position: absolute;
-      background-color: #8613A5;
+      background-color: transparent;
       top: 50%;
       left: -40px;
       transform: translateY(-50%);
       z-index: -1; 
+    }
+
+    &-text.purple::after{
+      background-color: #8613A5;
     }
 
     &-text.red::after{

@@ -1,7 +1,40 @@
-.auction{
-    &-cards{
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-    }
+.auction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+
+  &-cards {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 84px;
+    width: calc(100% - 80px);
+    margin-left: 80px;
+    
+  }
 }
+
+.mantine-Carousel-controls{
+  display: flex;
+  justify-content: end !important;
+  gap: 28px;
+  position: absolute;
+  top: -96px !important;
+  color: black;
+  margin-right: 80px !important;
+  
+}
+
+.mantine-Carousel-control{
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: none !important;
+}
+
+.mantine-Carousel-control[data-inactive="true"] {
+  opacity: 0.25 !important;
+  cursor: default !important;
+}
+
+

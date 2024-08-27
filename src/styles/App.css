@@ -158,6 +158,8 @@
   background-color: transparent;
   cursor: pointer;
   transition: all ease-in-out 200ms;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .button:hover {
   background-color: #271b2b;
@@ -171,8 +173,16 @@
   background-color: rgba(255, 192, 33, 0.685);
 }
 
+.white {
+  background-color: transparent;
+  color: inherit;
+}
+.white:hover {
+  background-color: #271b2b;
+}
+
 .large {
-  width: 257px;
+  width: 260px;
   padding: 24px 76px;
   font-size: 28px;
 }
@@ -214,6 +224,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 84px;
 }
 .title-text {
   position: relative;
@@ -227,20 +238,53 @@
   border-radius: 50%;
   display: block;
   position: absolute;
-  background-color: #8613A5;
+  background-color: transparent;
   top: 50%;
   left: -40px;
   transform: translateY(-50%);
   z-index: -1;
 }
+.title-text.purple::after {
+  background-color: #8613A5;
+}
 .title-text.red::after {
   background-color: #E03054;
 }
 
+.auction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+}
 .auction-cards {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
+  margin-bottom: 84px;
+  width: calc(100% - 80px);
+  margin-left: 80px;
+}
+
+.mantine-Carousel-controls {
+  display: flex;
+  justify-content: end !important;
+  gap: 28px;
+  position: absolute;
+  top: -96px !important;
+  color: black;
+  margin-right: 80px !important;
+}
+
+.mantine-Carousel-control {
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: none !important;
+}
+
+.mantine-Carousel-control[data-inactive=true] {
+  opacity: 0.25 !important;
+  cursor: default !important;
 }
 
 .card {
@@ -309,6 +353,49 @@
 }
 .card-info-button {
   width: 100%;
+}
+
+.works {
+  margin-bottom: 174px;
+  margin-top: 174px;
+}
+.works-cards {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 70px;
+  margin-bottom: 32px;
+}
+.works-cards-text {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(255, 206, 78);
+  font-size: 24px;
+  font-weight: 600;
+}
+.works-cards-text p {
+  width: 20%;
+  text-align: center;
+}
+.works-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  text-align: center;
+}
+.works-card p {
+  color: rgb(255, 206, 78);
+  font-size: 24px;
+  font-weight: 600;
+}
+.works-card-image {
+  background-color: #372839;
+  height: 106px;
+  width: 106px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 * {
@@ -397,6 +484,6 @@ select {
 }
 body {
   font-family: "Oxanium";
-  background-color: #1C121F;
-  color: rgb(245, 251, 242);
+  background-color: #1C121F !important;
+  color: rgb(245, 251, 242) !important;
 }/*# sourceMappingURL=App.css.map */
