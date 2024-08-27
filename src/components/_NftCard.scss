@@ -1,0 +1,84 @@
+.card {
+  background-color: #3d2942;
+  max-width: 495px;
+  padding: 32px 32px 28px 32px;
+
+  &-image-wrapper {
+    position: relative;
+    margin-bottom: 28px;
+  }
+
+  &-timer {
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(
+      125.33deg,
+      #8613a5 18.61%,
+      rgba(250, 250, 250, 0.65) 137.4%
+    );
+    font-size: 24px;
+    font-weight: 600;
+    padding: 16px 46px;
+    box-shadow: 0px 4px 30px 0px #0000001f;
+  }
+
+  &-info-main img {
+    width: 54px;
+    height: 54px;
+  }
+
+  &-info-main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+  }
+
+  &-info-user {
+    display: flex;
+    gap: 16px;
+  }
+
+  &-info-likes {
+    display: flex;
+    gap: 9px;
+    font-size: 32px;
+    color: #76607a;
+    align-items: center;
+  }
+
+  &-info-likes img {
+    width: 28px;
+    height: 26px;
+  }
+
+  &-info-title {
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  &-info-username {
+    font-size: 20px;
+    color: #bdaac1;
+  }
+
+  &-info-bid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+
+    &-text {
+      color: #c6bfc8;
+      font-size: 24px;
+    }
+
+    &-price {
+      font-size: 24px;
+      font-weight: 700;
+    }
+  }
+
+  &-info-button{
+    width: 100%;
+  }
+}

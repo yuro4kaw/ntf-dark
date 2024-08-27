@@ -1,0 +1,39 @@
+.button{
+ border: 1px solid $primary;
+ padding: 22px 30px;
+ color: $primary;
+ font-weight: 600;
+ font-size: 18px;
+ background-color: transparent;
+ cursor: pointer;
+ transition: all $default-transition;
+
+ &:hover{
+    background-color: #271b2b;
+ }
+}
+
+.yellow{
+    background-color: $primary;
+    color: black;
+
+    &:hover{
+        background-color: rgba(255, 192, 33, 0.685);
+     }
+}
+
+
+.large{
+    width: 257px;
+    padding: 24px 76px;
+    font-size: 28px;
+}
+
+.card-button{
+    width: 100%;
+    border: 1px solid #FDE8B3;
+    background: #E9D7A71A;
+    font-weight: 500;
+    font-size: 24px;
+    color: inherit;
+}

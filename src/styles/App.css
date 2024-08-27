@@ -14,6 +14,308 @@
   margin: 0 auto;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 38px;
+  margin-bottom: 146px;
+}
+.header nav {
+  display: flex;
+  align-items: center;
+}
+.header-right {
+  display: flex;
+  gap: 160px;
+}
+.header-nav {
+  display: flex;
+  gap: 64px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.header-nav .active {
+  color: rgb(255, 206, 78);
+}
+.header-nav li {
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  margin-bottom: 182px;
+  position: relative;
+  gap: 100px;
+}
+.hero > div:nth-child(1) {
+  flex: 52%;
+}
+.hero-buttons {
+  display: flex;
+  gap: 48px;
+  margin-bottom: 120px;
+}
+.hero h1 {
+  font-size: 76px;
+  color: rgb(245, 251, 242);
+  margin-top: 32px;
+  margin-bottom: 78px;
+}
+.hero h1 span {
+  color: rgb(255, 206, 78);
+}
+.hero-counters {
+  display: flex;
+}
+
+.nft {
+  max-height: 718px;
+}
+.nft-wrapper {
+  max-height: 718px;
+  position: relative;
+}
+.nft-top {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 44px);
+  opacity: 95%;
+  margin: 24px 22px 0 22px;
+  padding: 18px 40px;
+  background: linear-gradient(92.8deg, rgba(255, 137, 61, 0.09) -52.37%, rgba(250, 250, 250, 0.9) 137.41%);
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.12);
+  position: absolute;
+  top: 0;
+  -webkit-backdrop-filter: blur(45px);
+          backdrop-filter: blur(45px);
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.12);
+  background: linear-gradient(145deg, rgba(255, 137, 61, 0.09) 0%, rgba(250, 250, 250, 0.9) 100%);
+  opacity: 0.95;
+}
+.nft-top-text {
+  color: rgb(228, 222, 231);
+  font-size: 18px;
+  font-weight: 500;
+}
+.nft-top-value {
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+}
+.nft-bottom {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 34px 40px 35px 60px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.nft-bottom-text {
+  color: rgb(22, 9, 27);
+  font-weight: 600;
+  font-size: 28px;
+}
+.nft-bottom-username {
+  color: rgb(89, 77, 94);
+  font-size: 24px;
+}
+
+.blur {
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  background: rgba(79, 70, 78, 0.45);
+  position: absolute;
+  top: 0;
+  width: 48%;
+  height: 1063px;
+  z-index: -10;
+  right: 0;
+}
+
+.arrow {
+  position: absolute;
+  width: 156px;
+  height: 156px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(109, 91, 114, 0.4);
+  box-shadow: 0px 14px 79px 0px rgba(134, 19, 165, 0.1019607843);
+  bottom: -105px;
+  left: 54%;
+  transform: translate(-50%, 0);
+  z-index: -11;
+}
+
+.button {
+  border: 1px solid rgb(255, 206, 78);
+  padding: 22px 30px;
+  color: rgb(255, 206, 78);
+  font-weight: 600;
+  font-size: 18px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all ease-in-out 200ms;
+}
+.button:hover {
+  background-color: #271b2b;
+}
+
+.yellow {
+  background-color: rgb(255, 206, 78);
+  color: black;
+}
+.yellow:hover {
+  background-color: rgba(255, 192, 33, 0.685);
+}
+
+.large {
+  width: 257px;
+  padding: 24px 76px;
+  font-size: 28px;
+}
+
+.card-button {
+  width: 100%;
+  border: 1px solid #FDE8B3;
+  background: rgba(233, 215, 167, 0.1019607843);
+  font-weight: 500;
+  font-size: 24px;
+  color: inherit;
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.counter .value {
+  font-weight: 700;
+  font-size: 62px;
+  color: rgb(245, 251, 242);
+}
+.counter .description {
+  font-size: 24px;
+  color: rgb(155, 158, 154);
+}
+
+.partners {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 182px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title-text {
+  position: relative;
+  font-weight: 700;
+  font-size: 64px;
+}
+.title-text::after {
+  content: "";
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  background-color: #8613A5;
+  top: 50%;
+  left: -40px;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+.title-text.red::after {
+  background-color: #E03054;
+}
+
+.auction-cards {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #3d2942;
+  max-width: 495px;
+  padding: 32px 32px 28px 32px;
+}
+.card-image-wrapper {
+  position: relative;
+  margin-bottom: 28px;
+}
+.card-timer {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(125.33deg, #8613a5 18.61%, rgba(250, 250, 250, 0.65) 137.4%);
+  font-size: 24px;
+  font-weight: 600;
+  padding: 16px 46px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1215686275);
+}
+.card-info-main img {
+  width: 54px;
+  height: 54px;
+}
+.card-info-main {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+.card-info-user {
+  display: flex;
+  gap: 16px;
+}
+.card-info-likes {
+  display: flex;
+  gap: 9px;
+  font-size: 32px;
+  color: #76607a;
+  align-items: center;
+}
+.card-info-likes img {
+  width: 28px;
+  height: 26px;
+}
+.card-info-title {
+  font-size: 28px;
+  font-weight: 500;
+}
+.card-info-username {
+  font-size: 20px;
+  color: #bdaac1;
+}
+.card-info-bid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.card-info-bid-text {
+  color: #c6bfc8;
+  font-size: 24px;
+}
+.card-info-bid-price {
+  font-size: 24px;
+  font-weight: 700;
+}
+.card-info-button {
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /* Указываем box sizing */
 *,
 *::before,
@@ -54,8 +356,8 @@ body {
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
-ul[class],
-ol[class] {
+ul,
+ol {
   list-style: none;
 }
 
@@ -97,23 +399,4 @@ body {
   font-family: "Oxanium";
   background-color: #1C121F;
   color: rgb(245, 251, 242);
-}
-
-.header {
-  background-color: rgb(0, 81, 255);
-}
-@media screen and (min-width: 1280px) and (max-width: 1599.98px) {
-  .header {
-    background-color: rgb(145, 255, 0);
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1279.98px) {
-  .header {
-    background-color: orange;
-  }
-}
-@media screen and (max-width: 767.98px) {
-  .header {
-    background-color: red;
-  }
 }/*# sourceMappingURL=App.css.map */

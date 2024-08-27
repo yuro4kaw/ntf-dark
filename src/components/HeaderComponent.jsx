@@ -1,10 +1,27 @@
-import React from 'react'
-import "./../styles/App.css"
+import React from "react";
+import "./../styles/App.css";
+
+import Logo from "./../images/Logo.svg";
+import Button from "./Button";
 
 const HeaderComponent = () => {
   return (
-    <div className='header container'><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae adipisci dignissimos quisquam rerum ex in, quasi autem eum dolorem nesciunt voluptatibus quia numquam velit doloribus. Vero neque iure reprehenderit voluptatum vel iusto cumque sapiente eaque. Iste quasi consectetur omnis eius eos praesentium ipsa minima fugiat dolore facilis, molestias expedita perferendis.</p></div>
-  )
-}
+    <div className="header container">
+      <img src={Logo} alt="Logo" width={66} height={66} />
 
-export default HeaderComponent
+      <div className="header-right">
+        <nav>
+          <ul className="header-nav">
+            <li className="active">Explore</li>
+            <li>Creators</li>
+            <li>Community</li>
+          </ul>
+        </nav>
+
+        <Button text="Connect Wallet" />
+      </div>
+    </div>
+  );
+};
+
+export default HeaderComponent;
