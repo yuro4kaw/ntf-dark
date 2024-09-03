@@ -1,0 +1,43 @@
+.cr-card{
+    background-color: #302034;
+    padding: 26px 64px 26px 30px;
+    box-shadow: 2px 0px 0px 0px #E03054 inset;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+
+    &-left{
+        display: flex;
+        gap: 24px;
+        align-items: center;
+    }
+
+    &-info{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-right{
+        height: 100%;
+        border-left: 3px solid #49374E;
+        padding: 12px 0 12px 46px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        align-items: center;
+    }
+
+    &-main{
+        font-size: 32px;
+        letter-spacing: 2px;
+        font-weight: 600;
+    }
+
+    &-sub{
+        color: #BDAAC1;
+        font-size: 24px;
+        font-weight: 500;
+    }
+}

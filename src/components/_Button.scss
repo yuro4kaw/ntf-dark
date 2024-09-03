@@ -1,49 +1,65 @@
-.button{
- border: 1px solid $primary;
- padding: 22px 30px;
- color: $primary;
- font-weight: 600;
- font-size: 18px;
- background-color: transparent;
- cursor: pointer;
- transition: all $default-transition;
- width: fit-content;
+.button {
+  border: 1px solid $primary;
+  padding: 22px 30px;
+  color: $primary;
+  font-weight: 600;
+  font-size: 18px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all $default-transition;
+  width: fit-content;
 
- &:hover{
+  &:hover {
     background-color: #271b2b;
- }
+  }
 }
 
-.yellow{
-    background-color: $primary;
-    color: black;
+.yellow {
+  background-color: $primary;
+  color: black;
 
-    &:hover{
-        background-color: rgba(255, 192, 33, 0.685);
-     }
+  &:hover {
+    background-color: rgba(255, 192, 33, 0.685);
+  }
 }
 
-.white{
-    background-color: transparent;
-    color: inherit;
+.white {
+  background-color: transparent;
+  color: inherit;
 
-    &:hover{
-        background-color: #271b2b;
-     }
+  &:hover {
+    background-color: #271b2b;
+  }
 }
 
-
-.large{
-    width: 260px;
-    padding: 24px 76px;
-    font-size: 28px;
+.large {
+  width: 260px;
+  padding: 24px 76px;
+  font-size: 28px;
 }
 
-.card-button{
-    width: 100%;
-    border: 1px solid #FDE8B3;
-    background: #E9D7A71A;
-    font-weight: 500;
-    font-size: 24px;
-    color: inherit;
+.medium {
+  padding: 22px 58px;
+  font-size: 24px;
+  width: 246px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-button {
+  width: 100%;
+  border: 1px solid #fde8b3;
+  background: #e9d7a71a;
+  font-weight: 500;
+  font-size: 24px;
+  color: inherit;
+}
+
+.hidden{
+    display: none;
 }

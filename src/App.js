@@ -10,6 +10,9 @@ import HowItWorks from "./components/HowItWorks";
 
 import { createTheme, MantineProvider } from '@mantine/core';
 import PopularCollections from "./components/PopularCollections";
+import Categories from "./components/Categories";
+import Creators from "./components/Creators";
+import Newsletter from "./components/Newsletter";
 
 const theme = createTheme({});
 
@@ -25,6 +28,9 @@ function App() {
         <Auctions />
         <HowItWorks />
         <PopularCollections />
+        <Categories />
+        <Creators />
+        <Newsletter />
       </BrowserRouter>
     </div>
     </MantineProvider>

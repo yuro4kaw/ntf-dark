@@ -1,0 +1,132 @@
+@keyframes filterAnimation {
+  0% {
+    filter: brightness(100%) blur(0); // Початковий стан
+  }
+  100% {
+    filter: brightness(70%) blur(3px); // Кінцевий стан
+  }
+}
+
+// Зворотна анімація при знятті наведення
+@keyframes reverseFilterAnimation {
+  0% {
+    filter: brightness(70%) blur(3px); // Початковий стан (від того, де закінчилася попередня анімація)
+  }
+  100% {
+    filter: brightness(100%) blur(0); // Кінцевий стан (повернення до початкового вигляду)
+  }
+}
+
+.cat-card {
+  background-color: #3d2942;
+  max-width: 495px;
+  padding: 32px 32px 28px 32px;
+
+  .cat-card-image-wrapper img {
+    // Дефолтний фільтр
+    filter: brightness(100%) blur(0);
+    animation: none;
+  }
+
+  &:hover {
+    .cat-card-button {
+      opacity: 1;
+    }
+    .cat-card-image-wrapper img {
+      animation: filterAnimation 0.2s ease-in-out forwards; // Запуск анімації на hover
+    }
+  }
+
+  &:not(:hover) {
+    .cat-card-image-wrapper img {
+      animation: reverseFilterAnimation 0.2s ease-in-out forwards; // Запуск зворотньої анімації при знятті hover
+    }
+    .cat-card-button {
+      opacity: 0;
+    }
+  }
+
+  &-image-wrapper {
+    position: relative;
+    margin-bottom: 28px;
+  }
+
+  &-image-wrapper img {
+    height: 359px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &-timer {
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(
+      125.33deg,
+      #8613a5 18.61%,
+      rgba(250, 250, 250, 0.65) 137.4%
+    );
+    font-size: 24px;
+    font-weight: 600;
+    padding: 16px 46px;
+    box-shadow: 0px 4px 30px 0px #0000001f;
+  }
+
+  &-info-main img {
+    width: 54px;
+    height: 54px;
+  }
+
+  &-info-main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+  }
+
+  &-info-user {
+    display: flex;
+    gap: 16px;
+  }
+
+  &-info-likes {
+    display: flex;
+    gap: 9px;
+    font-size: 32px;
+    color: #76607a;
+    align-items: center;
+  }
+
+  &-info-likes img {
+    width: 28px;
+    height: 26px;
+  }
+
+  &-info-title {
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  &-info-username {
+    font-size: 20px;
+    color: #bdaac1;
+  }
+
+  &-info-bid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-text {
+      color: #c6bfc8;
+      font-size: 24px;
+    }
+
+    &-price {
+      font-size: 24px;
+      font-weight: 700;
+    }
+  }
+
+  &-info-button {
+    width: 100%;
+  }
+}

@@ -2,7 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 80px;
+  padding-bottom: 80px;
+  padding-top: 80px;
+  background: linear-gradient(336.61deg, #251928 16.25%, rgba(37, 25, 40, 0) 91.6%);
+
 
   &-cards {
     display: flex;
