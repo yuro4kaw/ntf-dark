@@ -1,0 +1,46 @@
+.cl-card {
+  background-color: #3d2942;
+  max-width: 525px;
+  padding: 36px;
+
+  &-image-wrapper {
+    position: relative;
+    margin-bottom: 28px;
+  }
+
+  &-image-wrapper img {
+    height: 272px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+
+  &-info-main img {
+    width: 64px;
+    height: 64px;
+  }
+
+  &-info-main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    align-items: center;
+  }
+
+  &-info-main p{
+    color: #C2B5C6;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  &-info-user {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+
+  &-info-main &-info-username {
+    font-size: 32px;
+    color: #F5FBF2;
+  }
+}

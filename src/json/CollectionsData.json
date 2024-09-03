@@ -1,0 +1,33 @@
+[
+    {
+      "nftId": "ERC-721",
+      "username": "@wzard",
+      "image": "Nft1",
+      "avatar": "Avt1"
+    },
+    {
+      "nftId": "ERC-722",
+      "username": "@artlover",
+      "image": "Nft2",
+      "avatar": "Avt2"
+    },
+    {
+      "nftId": "ERC-723",
+      "username": "@crypto_guru",
+      "image": "Nft3",
+      "avatar": "Avt3"
+    },
+    {
+      "nftId": "ERC-724",
+      "username": "@pixmaster",
+      "image": "Nft4",
+      "avatar": "Avt4"
+    },
+    {
+      "nftId": "ERC-725",
+      "username": "@abstract_king",
+      "image": "Nft5",
+      "avatar": "Avt1"
+    }
+  ]
+  

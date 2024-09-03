@@ -9,6 +9,7 @@ import Auctions from "./components/Auctions";
 import HowItWorks from "./components/HowItWorks";
 
 import { createTheme, MantineProvider } from '@mantine/core';
+import PopularCollections from "./components/PopularCollections";
 
 const theme = createTheme({});
 
@@ -23,6 +24,7 @@ function App() {
         <Partners />
         <Auctions />
         <HowItWorks />
+        <PopularCollections />
       </BrowserRouter>
     </div>
     </MantineProvider>

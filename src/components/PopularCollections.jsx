@@ -1,12 +1,13 @@
 import React from "react";
-import SectionTitle from "./SectionTitle";
-import NftCard from "./NftCard";
-import Button from "./Button";
+import CollectionCard from "./CollectionCard";
 import { Carousel } from "@mantine/carousel";
+import Button from "./Button";
 import Arrow from "./../images/icons/Arrow.svg";
-import auctionsJson from "./../json/AuctionsData.json"
+import SectionTitle from "./SectionTitle";
 
-const AuctionsData = auctionsJson;
+import collectionsJson from "./../json/CollectionsData.json";
+
+const CollectionsData = collectionsJson;
 
 const PrevIcon = () => {
   return (
@@ -24,36 +25,33 @@ const NextIcon = () => {
   );
 };
 
-const Auctions = () => {
+const PopularCollections = () => {
   return (
-    <section className="auction">
-      <SectionTitle text="Live Auctions" red />
+    <section className="popular">
+      <SectionTitle text="Popular Collections" red />
       <Carousel
         className="auction-cards"
         align="start"
-        slideSize={"38%"}
+        slideSize={"40%"}
         previousControlIcon={<PrevIcon />}
         nextControlIcon={<NextIcon />}
         containScroll={`trimSnaps`}
         dragFree
       >
-        {AuctionsData.map((card, index) => (
+        {CollectionsData.map((card, index) => (
           <Carousel.Slide key={index}>
-            <NftCard
-              time={card.time}
-              title={card.title}
+            <CollectionCard
               username={card.username}
-              bid={card.bid}
-              likes={card.likes}
               image={card.image}
               avatar={card.avatar}
+              nftId={card.nftId}
             />
           </Carousel.Slide>
         ))}
       </Carousel>
-      <Button className="standart" white large text="View All" />
+      <Button text="View All" large white />
     </section>
   );
 };
 
-export default Auctions;
+export default PopularCollections;

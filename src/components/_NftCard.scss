@@ -8,6 +8,12 @@
     margin-bottom: 28px;
   }
 
+  &-image-wrapper img {
+    height: 359px;
+    width: 100%;
+    object-fit: cover;
+  }
+
   &-timer {
     position: absolute;
     bottom: 0;
