@@ -26,7 +26,7 @@ const NextIcon = () => {
 
 const Auctions = () => {
   return (
-    <section className="auction">
+    <section id="auctions" className="auction">
       <SectionTitle text="Live Auctions" red />
       <Carousel
         className="auction-cards"

@@ -26,7 +26,7 @@ const NextIcon = () => {
 
 const Categories = () => {
   return (
-    <section className="categories">
+    <section id="explore" className="categories">
       <SectionTitle text="Explore By Categories" purple />
       <Carousel
         className="categories-cards"

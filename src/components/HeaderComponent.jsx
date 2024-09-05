@@ -3,6 +3,7 @@ import "./../styles/App.css";
 
 import Logo from "./../images/Logo.svg";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 const HeaderComponent = () => {
   return (
@@ -12,9 +13,15 @@ const HeaderComponent = () => {
       <div className="header-right">
         <nav>
           <ul className="header-nav">
-            <li className="active">Explore</li>
-            <li>Creators</li>
-            <li>Community</li>
+            <li>
+              <a href="#auctions">Auctions</a>
+            </li>
+            <li>
+              <a href="#explore">Explore</a>
+            </li>
+            <li>
+              <a href="#creators">Creators</a>
+            </li>
           </ul>
         </nav>
 

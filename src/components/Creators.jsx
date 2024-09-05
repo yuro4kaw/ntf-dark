@@ -5,7 +5,7 @@ import Button from "./Button";
 
 const Creators = () => {
   return (
-    <section className="creators container">
+    <section id="creators" className="creators container">
       <SectionTitle text="Top Creators" red />
       <div className="creators-cards">
         <CreatorCard />

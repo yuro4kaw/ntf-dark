@@ -13,6 +13,7 @@ import PopularCollections from "./components/PopularCollections";
 import Categories from "./components/Categories";
 import Creators from "./components/Creators";
 import Newsletter from "./components/Newsletter";
+import Footer from "./components/Footer";
 
 const theme = createTheme({});
 
@@ -31,6 +32,7 @@ function App() {
         <Categories />
         <Creators />
         <Newsletter />
+        <Footer />
       </BrowserRouter>
     </div>
     </MantineProvider>

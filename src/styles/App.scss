@@ -18,7 +18,11 @@
 @import "./../components/_Creators";
 @import "./../components/_CreatorCard";
 @import "./../components/_Newsletter";
+@import "./../components/_Footer";
 
+html {
+  scroll-behavior: smooth;
+}
 
 *{
   margin: 0;
@@ -33,9 +37,10 @@
 }
 
 /* Убираем внутренние отступы */
-ul[class],
-ol[class] {
+ul,
+ol{
   padding: 0;
+  margin: 0;
 }
 
 /* Убираем внешние отступы */

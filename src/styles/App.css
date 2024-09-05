@@ -26,7 +26,7 @@
 }
 .header-right {
   display: flex;
-  gap: 160px;
+  gap: 180px;
 }
 .header-nav {
   display: flex;
@@ -34,7 +34,11 @@
   font-weight: 500;
   font-size: 18px;
 }
-.header-nav .active {
+.header-nav a {
+  color: inherit;
+  text-decoration: none;
+}
+.header-nav .active a {
   color: rgb(255, 206, 78);
 }
 .header-nav li {
@@ -183,6 +187,11 @@
 
 .large {
   width: 260px;
+  padding: 24px 76px;
+  font-size: 28px;
+}
+
+.big {
   padding: 24px 76px;
   font-size: 28px;
 }
@@ -646,7 +655,7 @@
 
 .newsletter {
   position: relative;
-  padding: 80px 0;
+  padding: 80px 0 120px 0;
   background: linear-gradient(179.78deg, rgba(28, 18, 31, 0.1882352941) 9.98%, rgba(28, 18, 31, 0.21) 81.39%);
   z-index: 1;
   position: relative;
@@ -662,7 +671,88 @@
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0.5;
-  z-index: 0;
+  z-index: -1;
+}
+.newsletter-input {
+  padding: 28px 20px 26px 54px;
+  background-color: transparent;
+  border: 1px solid rgb(255, 206, 78);
+  border-right: none;
+  font-size: 24px;
+  color: #a48ea9;
+  outline: none;
+}
+.newsletter-input::-moz-placeholder {
+  color: #a48ea9;
+}
+.newsletter-input::placeholder {
+  color: #a48ea9;
+}
+.newsletter form {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+footer {
+  background: #251928;
+  display: flex;
+  justify-content: space-between;
+  padding: 116px 0;
+}
+footer .lists {
+  display: flex;
+  gap: 226px;
+}
+footer .lists div h4 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+footer .lists div ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .lists div ul li a {
+  color: #96839b;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+footer .lists div ul li a:hover {
+  text-decoration: underline;
+}
+footer .left {
+  display: flex;
+  align-items: start;
+  gap: 50px;
+}
+footer .main {
+  max-width: 390px;
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+}
+footer .main p {
+  color: #96839b;
+  font-size: 20px;
+  font-weight: 500;
+}
+footer .main .copyrights {
+  font-weight: 400;
+}
+footer .icons {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+footer .icon:hover {
+  filter: brightness(0) saturate(100%) invert(98%) sepia(21%) saturate(5065%) hue-rotate(192deg) brightness(105%) contrast(101%);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 * {
@@ -678,9 +768,10 @@
 }
 
 /* Убираем внутренние отступы */
-ul[class],
-ol[class] {
+ul,
+ol {
   padding: 0;
+  margin: 0;
 }
 
 /* Убираем внешние отступы */

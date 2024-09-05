@@ -1,11 +1,15 @@
+import { type } from "@testing-library/user-event/dist/type";
 import React from "react";
 
 const Button = (props) => {
   return (
     <button
-      className={`button ${props.yellow && "yellow"} ${props.hidden && "hidden"} ${
-        props.medium && "medium"
-      } ${props.large && "large"} ${props.centered && "centered"} ${props.white && "white"} ${
+      type={props.type || "button"}
+      className={`button ${props.yellow && "yellow"} ${
+        props.hidden && "hidden"
+      } ${props.medium && "medium"} ${props.large && "large"} ${
+        props.big && "big"
+      } ${props.centered && "centered"} ${props.white && "white"} ${
         props.card && "card-button"
       } ${props.className}`}
     >
