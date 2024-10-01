@@ -1,17 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Button from "./Button";
 import Counter from "./Counter";
 import CardImage from "./../images/nfts/Image1.png";
 import { Link } from "react-router-dom";
 import ArrowDown from "./../images/icons/ArrowDown.svg";
+import axios from "axios";
 
 const Hero = () => {
+  const [title, setTitle] = useState("");
+
+  useEffect(() => {
+    const apiUrl = "http://local.loc/wp-json/wp/v2/posts";
+
+    axios
+      .get(apiUrl)
+      .then((res) => {
+        const result = res.data[0].title.rendered;
+        setTitle(result);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+
   return (
     <section className="hero container">
       <div>
-        <h1>
-          Explore, Buy and Sell the <span>Best NFTs!</span>
-        </h1>
+        <h1>{title}</h1>
         <div className="hero-buttons">
           <Button text="Explore" yellow large />
           <Button text="Create" white large />
@@ -41,10 +56,7 @@ const Hero = () => {
         <div className="nft-bottom">
           <div>
             <p className="nft-bottom-text">Artist</p>
-            <Link
-              className="nft-bottom-username"
-              to="https://instagram.com"
-            >
+            <Link className="nft-bottom-username" to="https://instagram.com">
               @wzard
             </Link>
           </div>
@@ -52,11 +64,10 @@ const Hero = () => {
           <Button text="Start Bid" yellow />
         </div>
       </div>
-      
+
       <div className="arrow">
         <img src={ArrowDown} alt="Down" />
       </div>
-
     </section>
   );
 };
