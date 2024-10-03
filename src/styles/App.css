@@ -673,11 +673,16 @@
   opacity: 0.5;
   z-index: -1;
 }
+.newsletter-inputs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  margin-bottom: 30px;
+}
 .newsletter-input {
   padding: 28px 20px 26px 54px;
   background-color: transparent;
   border: 1px solid rgb(255, 206, 78);
-  border-right: none;
   font-size: 24px;
   color: #a48ea9;
   outline: none;
@@ -692,6 +697,9 @@
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 footer {
