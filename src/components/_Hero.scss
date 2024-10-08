@@ -33,6 +33,8 @@
 
 .nft {
   max-height: 718px;
+  object-fit: cover;
+  object-position: right;
 
   &-wrapper {
     max-height: 718px;
