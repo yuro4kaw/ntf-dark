@@ -7,6 +7,7 @@
   font-family: "WorkSans";
   src: url("./fonts/Work_Sans/WorkSans-VariableFont_wght.woff2") format("woff2"), url("./fonts/Work_Sans/WorkSans-VariableFont_wght.ttf") format("ttf");
 }
+
 .container {
   max-width: 1440px;
   padding-left: 80px;

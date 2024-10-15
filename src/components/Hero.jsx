@@ -5,6 +5,7 @@ import CardImage from "./../images/nfts/Image1.png";
 import { Link } from "react-router-dom";
 import ArrowDown from "./../images/icons/ArrowDown.svg";
 import axios from "axios";
+import Button2 from "./Button2";
 
 const Hero = () => {
   const [heroData, setHeroData] = useState(null);
@@ -34,7 +35,7 @@ const Hero = () => {
         <div>
           <h1>{heroData.hero_title}</h1>
           <div className="hero-buttons">
-            <Button text={heroData.button1} yellow large />
+            <Button2 />
             <Button text={heroData.button2} white large />
           </div>
           <div className="hero-counters">
